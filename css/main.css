@@ -35,27 +35,27 @@ input,button,select,textarea{outline:none}
 #satellite{background:url(../images/satellite/g1.png) no-repeat;width:683px;height:552px;position:absolute;right:-5rem;top:50%;margin-top:-276px;}
 #satellite div{position:absolute;top:50%;left:50%;}
 #satellite .g2{
-	animation:clockwise 10s linear infinite;
+	animation:clockwise 40s linear infinite;
 	background:url(../images/satellite/g2.png) no-repeat center center;width:345px;height:411px;margin:-220px 0 0 -167px;
 }
 #satellite .g3{
-	animation:clockwise 30s linear infinite;
+	animation:clockwise 60s linear infinite;
 	background:url(../images/satellite/g3.png) no-repeat center center;width:392px;height:394px;margin:-214px 0 0 -181px;
 }
 #satellite .g4{
-	animation:antiClockwise 25s linear infinite;
+	animation:antiClockwise 50s linear infinite;
 	background:url(../images/satellite/g4.png) no-repeat center center;width:390px;height:382px;margin:-208px 0 0 -184px;
 }
 #satellite .g5{
-	animation:clockwise 20s linear infinite;
+	animation:clockwise 80s linear infinite;
 	background:url(../images/satellite/g5.png) no-repeat center center;width:444px;height:349px;margin:-188px 0 0 -216px;
 }
 #satellite .g6{
-	animation:antiClockwise 50s linear infinite;
+	animation:antiClockwise 70s linear infinite;
 	background:url(../images/satellite/g6.png) no-repeat center center;width:437px;height:241px;margin:-138px 0 0 -213px;
 }
 #satellite .g7{
-	animation:clockwise 21s linear infinite;
+	animation:clockwise 65s linear infinite;
 	background:url(../images/satellite/g7.png) no-repeat center center;width:339px;height:415px;margin:-224px 0 0 -165px;
 }
 @keyframes clockwise{
@@ -89,6 +89,10 @@ input,button,select,textarea{outline:none}
 		-webkit-transform:rotate(0deg);
 		-o-transform:rotate(0deg);
 	}
+}
+@media (max-width: 767px){
+	#home .home{width:90%;}
+	#home .home article{background-color:rgba(0,0,0,0.7);padding:110px 2rem 2rem;background-size:80%;background-position:center 2rem;position:relative;width:100%;z-index:2;}
 }
 
 /* road map */
