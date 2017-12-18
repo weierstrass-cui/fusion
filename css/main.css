@@ -30,7 +30,9 @@ input,button,select,textarea{outline:none}
     width:100%;height:100vh;overflow:hidden;
 }
 #home .home{width:80%;height:100%;margin:0 auto;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;}
+#home .article{width:100%;overflow:hidden;}
 #home .home article{background:url(../images/fusion.png) no-repeat center top;background-size:100%;width:50%;max-width:672px;padding-top:160px;color:#fff;font-size:1.6rem;line-height:2;}
+#home .article span{display:none;}
 #home .homeBG{background:url(../images/home.png) no-repeat 85% bottom;width:100%;height:100%;position:absolute;bottom:0;}
 #satellite{background:url(../images/satellite/g1.png) no-repeat;width:683px;height:552px;position:absolute;right:-5rem;top:50%;margin-top:-276px;}
 #satellite div{position:absolute;top:50%;left:50%;}
@@ -92,7 +94,14 @@ input,button,select,textarea{outline:none}
 }
 @media (max-width: 767px){
 	#home .home{width:90%;}
+	#home .article{border:1px solid #fff;position:relative;overflow:visible;}
 	#home .home article{background-color:rgba(0,0,0,0.7);padding:110px 2rem 2rem;background-size:80%;background-position:center 2rem;position:relative;width:100%;z-index:2;}
+	#home .article span{position:absolute;width:2rem;height:2rem;display:block;z-index:3;}
+	#home .article .left-top{border-top:3px solid #fff;border-left:3px solid #fff;top:-2px;left:-2px;}
+	#home .article .right-top{border-top:3px solid #fff;border-right:3px solid #fff;top:-2px;right:-2px;}
+	#home .article .left-bottom{border-bottom:3px solid #fff;border-left:3px solid #fff;bottom:-2px;left:-2px;}
+	#home .article .right-bottom{border-bottom:3px solid #fff;border-right:3px solid #fff;bottom:-2px;right:-2px;}
+
 }
 
 /* road map */
