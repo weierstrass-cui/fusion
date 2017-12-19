@@ -147,20 +147,17 @@ input,button,select,textarea{outline:none}
 #community .communitAnimate{background:url(../images/communityDown.png) no-repeat center bottom;width:672px;height:508px;margin:6rem auto 0;overflow:hidden;}
 #community .communitAnimate .communitUp{
 	animation:communitAnimate 1s linear infinite alternate;
-	background:url(../images/communityUp.png) no-repeat;width:227px;height:240px;margin:0 auto;display:block;
+	background:url(../images/communityUp.png) no-repeat;width:385px;height:242px;margin:0 auto;display:block;
 }
 @keyframes communitAnimate{
 from {margin-top:0;}
 to {margin-top:40px;}
 }
-
 @media (max-width: 767px){
 	#community .communitAll{width:90%;position:relative;z-index:2;}
 	#community .communitAnimate{width:100%;background-size:100%;position:absolute;top:70px;left:0;background-position:center center;}
-	#community .communitAnimate .communitUp{width:126px;background-size:100%;}
+	#community .communitAnimate .communitUp{width:220px;background-size:100%;}
 }
-
-
 /* token sale */
 #token{
 	background: -moz-linear-gradient(top, #106f98 0%, #1a1554 100%);
