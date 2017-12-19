@@ -34,7 +34,10 @@ input,button,select,textarea{outline:none}
 #home .home article{background:url(../images/fusion.png) no-repeat center top;background-size:100%;width:50%;max-width:672px;padding-top:160px;color:#fff;font-size:1.6rem;line-height:2;}
 #home .article span{display:none;}
 #home .homeBG{background:url(../images/home.png) no-repeat 85% bottom;width:100%;height:100%;position:absolute;bottom:0;}
-#satellite{background:url(../images/satellite/g1.png) no-repeat;width:683px;height:552px;position:absolute;right:-5rem;top:50%;margin-top:-276px;}
+#satellite{
+	animation:antiClockwise 120s linear infinite;
+	background:url(../images/satellite/g1.png) no-repeat;width:683px;height:552px;position:absolute;right:-5rem;top:50%;margin-top:-276px;
+}
 #satellite div{position:absolute;top:50%;left:50%;}
 #satellite .g2{
 	animation:clockwise 40s linear infinite;
@@ -50,7 +53,7 @@ input,button,select,textarea{outline:none}
 }
 #satellite .g5{
 	animation:clockwise 80s linear infinite;
-	background:url(../images/satellite/g5.png) no-repeat center center;width:444px;height:349px;margin:-188px 0 0 -216px;
+	background:url(../images/satellite/g5.png) no-repeat center center;width:444px;height:349px;margin:-191px 0 0 -211px;
 }
 #satellite .g6{
 	animation:antiClockwise 70s linear infinite;
