@@ -119,7 +119,7 @@ input,button,select,textarea{outline:none}
 #technologies .technologies{width:80%;margin:5rem auto 3rem;height:550px;position:relative;}
 #technologies .technologies ul{width:500px;}
 #technologies .technologies ul li{width:100%;height:120px;float:left;cursor:pointer;overflow:hidden;}
-#technologies .technologies .tech{width:500px;background:#fff;padding-bottom:10px;color:#333;opacity:0.6;transition:all .3s linear;left:0;top:0;position:relative;}
+#technologies .technologies .tech{width:500px;background:#fff;padding-bottom:10px;color:#333;opacity:0.6;transition:all .5s linear;left:0;top:0;position:relative;}
 #technologies .technologies .tech h3{width:100%;height:110px;line-height:110px;color:#125b89;font-size:1.8rem;font-weight:bolder;border-bottom:1px solid #ececec;text-align:center;box-shadow:0 15px 25px rgba(0,0,0,0.2) inset;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 #technologies .technologies .tech article{opacity:0;width:648px;padding:2rem;line-height:2;font-size:1.4rem;text-indent:2rem;}
 #technologies .technologies ul img{display:none;}
@@ -139,7 +139,6 @@ input,button,select,textarea{outline:none}
 	#technologies .technologies ul li.current .tech{width:100%;}
 	#technologies .technologies ul li.current img{display:block;position:static;margin:1rem auto 0;}
 }
-
 
 /* road map */
 #roadMap{background:url(../images/roadMap.jpg) no-repeat;font-size:1.4rem;background-size:cover;}
