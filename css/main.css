@@ -101,7 +101,6 @@ input,button,select,textarea{outline:none}
 	#home .article .right-top{border-top:3px solid #fff;border-right:3px solid #fff;top:-2px;right:-2px;}
 	#home .article .left-bottom{border-bottom:3px solid #fff;border-left:3px solid #fff;bottom:-2px;left:-2px;}
 	#home .article .right-bottom{border-bottom:3px solid #fff;border-right:3px solid #fff;bottom:-2px;right:-2px;}
-
 }
 
 /* road map */
@@ -176,8 +175,15 @@ to {margin-top:40px;}
 #token .tokenAll .right-top{border-top:3px solid #fff;border-right:3px solid #fff;top:-2px;right:-2px;}
 #token .tokenAll .left-bottom{border-bottom:3px solid #fff;border-left:3px solid #fff;bottom:-2px;left:-2px;}
 #token .tokenAll .right-bottom{border-bottom:3px solid #fff;border-right:3px solid #fff;bottom:-2px;right:-2px;}
+#token .tokenChart{width:80%;margin:6rem auto 0;overflow:hidden;}
+#chart{float:right;display:inline-block;width:50%;height:392px;}
+#token .tokenChart ul{float:right;display:inline-block;width:50%;}
+#token .tokenChart ul li{width:100%;overflow:hidden;color:#fff;line-height:2;}
+#token .tokenChart li span{float:left;display:inline-block;width:2.5rem;}
+#token .tokenChart li article{float:left;display:inline-block;width:calc(100% - 2.5rem);}
 @media (max-width: 767px){
-	#token .tokenAll{width:90%;}
+	#token .tokenAll, #token .tokenChart{width:90%;}
+	#chart, #token .tokenChart ul{width:100%;}
 }
 /* documents */
 #documents{background:url(../images/documents.jpg) no-repeat;background-size:cover;}

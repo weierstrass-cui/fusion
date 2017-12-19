@@ -92,6 +92,29 @@
             <span class="left-bottom"></span>
             <span class="right-bottom"></span>
         </div>
+        <div class="tokenChart">
+            <ul>
+                <li>
+                    <span>1)</span><article>Team: 8,192,000 (10%) will be allocated to the core team and distributed to the team in phases to motivate and attract more elites to join;</article>
+                </li>
+                <li>
+                    <span>2)</span><article>Team: 8,192,000 (10%) will be allocated to the core team and distributed to the team in phases to motivate and attract more elites to join;</article>
+                </li>
+                <li>
+                    <span>3)</span><article>Token Exchange: 8,192,000 (10%) will be used for the cooperation development of the other foundations, strategic cooperation with the blockchain communities and centralized organizations;</article>
+                </li>
+                <li>
+                    <span>4)</span><article>Pre-ICO: 8,192,000 (10%) will be assigned to Pre-ICO to acquire other tokens to fund project development and team operations;</article>
+                </li>
+                <li>
+                    <span>5)</span><article>ICO: 24,576,000 (30%) will be allocated to the ICO for the foundation to foster the ecological development of FUSION；</article>
+                </li>
+                <li>
+                    <span>6)</span><article>PoW&PoS: 24,576,000 (30%) will be used to motivate the proof of work and and the proof of stake.</article>
+                </li>
+            </ul>
+            <div id="chart"></div>
+        </div>
     </section>
 
     <!-- documents -->
@@ -431,10 +454,68 @@
     <footer id="footer">FUSION Foundation</footer>
 
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/echarts.js"></script>
     <script>
         $(function(){
             $('#FAQ').find('li').bind('click', function(){
                 $(this).addClass('current').find('article').slideDown().end().siblings('.current').removeClass('current').find('article').slideUp();
+            });
+
+            var chart = echarts.init(document.getElementById('chart')),
+                drawTimmer = null;
+            var drawChart = function(){
+                var option = {
+                    series : [
+                        {
+                            name:'chart',
+                            type:'pie',
+                            radius : '70%',
+                            clockWise: false,
+                            itemStyle: {
+                                normal: {
+                                    color: function(item){
+                                        return ['#5c759b', '#738bab', '#8aa0ba', '#a1b3c7', '#bac3d3', '#ffffff'][item.dataIndex];
+                                    },
+                                    label: {
+                                        formatter: '{b}',
+                                        textStyle: {
+                                            color: '#fff'
+                                        }
+                                    },
+                                    labelLine: {
+                                        length: 3,
+                                        lineStyle: {
+                                            color: '#fff'
+                                        }
+                                    }
+                                }
+                            },
+                            data:[
+                                {value:10, name:'1) Team: 10%'},
+                                {value:10, name:'2) Angel: 10%'},
+                                {value:10, name:'3) Token Exchange: 10%'},
+                                {value:10, name:'4) Pre-ICO: 10%'},
+                                {value:30, name:'5) ICO: 30%'},
+                                {value:30, name:'6) Pow&PoS: 30%'},
+                            ]
+                        }
+                    ]
+                }
+                clearTimeout(drawTimmer);
+                drawTimmer = setTimeout(function(){
+                    if( $('body').width() < 767){
+                        option.series[0].radius = '100%';
+                        option.series[0].itemStyle.normal.label.position = 'inner';
+                        option.series[0].itemStyle.normal.label.textStyle.color = '#1a1554';
+                        option.series[0].itemStyle.normal.labelLine.show = false;
+                    }
+                    chart.clear();
+                    chart.setOption(option);
+                }, 500);
+            }
+            drawChart();
+            $(window).resize(function(){
+                drawChart();
             });
         });
     </script>
