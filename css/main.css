@@ -14,6 +14,7 @@ input,button,select,textarea{outline:none}
 .section h1{width:100%;position:relative;margin:0 auto;text-align:center;font-size:5rem;padding:0.5rem 0;}
 .section h1:after{content:'';display:block;position:absolute;width:8%;border-bottom:1px solid #9b9ea0;margin-left:-4%;left:50%;bottom:0;}
 @media (max-width: 767px){
+	body{width:100%;overflow-x:hidden;}
 	.section{padding:4rem 2rem;}
 	.section h1{font-size:4rem;}
 	.section h1:after{width:40%;margin-left:-20%;}
