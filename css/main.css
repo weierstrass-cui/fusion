@@ -39,7 +39,7 @@ input,button,select,textarea{outline:none}
 	#nav .darkLogo{display:block;}
 	#nav .lightLogo{display:none;}
 	#nav .phoneMenu{display:block;}
-	#nav nav{background:#fff;position:absolute;display:none;width:50%;height:auto;left:0;box-shadow:10px 10px 10px rgba(0,0,0,0.15);}
+	#nav nav{background:#fff;position:absolute;display:none;width:50%;height:auto;top:100%;left:0;box-shadow:10px 10px 10px rgba(0,0,0,0.15);}
 	#nav nav a{width:100%;color:#333;display:block;text-align:left;height:50px;line-height:50px;}
 	#nav nav a.current{background:#106b95;color:#fff;}
 	#nav nav a.current:after, #nav nav a:hover:after{display:none;}
