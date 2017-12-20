@@ -8,6 +8,25 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+    <!-- nav -->
+    <section id="nav">
+        <a class="logo" title="Fusion" href="#home">
+            <img alt="Fusion" src="./images/logo.png" />
+        </a>
+        <nav>
+            <a href="#home" title="FUSION" id="homeNav" class="current">FUSION</a>
+            <a href="#vision" title="Vision">Vision</a>
+            <a href="#technologies" title="Technologies">Technologies</a>
+            <a href="#roadMap" title="Road Map">Road Map</a>
+            <a href="#community" title="Community">Community</a>
+            <a href="#token" title="Token Sales">Token Sales</a>
+            <a href="#documents" title="Documents">Documents</a>
+            <a href="#team" title="Team">Team</a>
+            <a href="#FAQ" title="FAQ">FAQ</a>
+            <a href="#contact" title="Contact US">Contact US</a>
+        </nav>
+    </section>
+
     <!-- home -->
     <section class="section" id="home">
         <div class="home">
@@ -603,6 +622,31 @@
             $(window).resize(function(){
                 drawChart();
             });
+            var navHeight = 120;
+            $('#nav').find('a').bind('click', function(){
+                var path = $(this).attr('href').replace(/^#/, ''),
+                    top = $('#' + path).offset().top;
+                $('html,body').animate({'scrollTop': top - navHeight + 'px'});
+                if( $(this).parent().is('nav') ){
+                    $(this).addClass('current').siblings().removeClass('current');
+                }else{
+                    $('#homeNav').addClass('current').siblings().removeClass('current');
+                }
+                return false;
+            });
+            var checkNav = function(){
+                var sct = $(this).scrollTop();
+                $('#nav').toggleClass('dark', sct > 100);
+                $('section[id!="nav"]').each(function(){
+                    if( $(this).offset().top - sct < navHeight ){
+                        $('nav').find('a[href="#' + $(this).attr('id') + '"]').addClass('current').siblings().removeClass('current');
+                    }
+                });
+            }
+            $(document).scroll(function(){
+                checkNav();
+            });
+            checkNav();
         });
     </script>
 </body>
