@@ -31,20 +31,18 @@ input,button,select,textarea{outline:none}
 #nav.dark .darkLogo{display:block;}
 #nav.dark .lightLogo{display:none;}
 #nav.dark nav a.current:after, #nav.dark nav a:hover:after{border-color:#333;}
-#nav .phoneMenu{background:url(../images/menu.png) no-repeat;background-size:100%;position:absolute;left:2rem;top:50%;display:none;width:32px;height:32px;margin-top:-8px;}
-#nav.dark .phoneMenu{background-image:url(../images/darkMenu.png);}
-
+#nav .phoneMenu{background:url(../images/darkMenu.png) no-repeat;background-size:100%;position:absolute;left:2rem;top:50%;display:none;width:32px;height:32px;margin-top:-8px;}
 @media (max-width: 767px){
-	#nav{padding:0 2rem;}
+	#nav{background:#fff;box-shadow: 0 10px 10px rgba(0,0,0,0.15);padding:0 2rem;}
 	#nav .logo{margin:0 auto;display:block;width:162px;}
+	#nav .darkLogo{display:block;}
+	#nav .lightLogo{display:none;}
 	#nav .phoneMenu{display:block;}
 	#nav nav{background:#fff;position:absolute;display:none;width:50%;height:auto;left:0;box-shadow:10px 10px 10px rgba(0,0,0,0.15);}
-	#nav nav a{width:100%;color:#333;display:block;text-align:left;height:60px;line-height:60px;}
-	#nav nav a.current, #nav nav a:hover{background:#106b95;color:#fff;}
+	#nav nav a{width:100%;color:#333;display:block;text-align:left;height:50px;line-height:50px;}
+	#nav nav a.current{background:#106b95;color:#fff;}
 	#nav nav a.current:after, #nav nav a:hover:after{display:none;}
 }
-
-
 /* home */
 #home{
 	background: -moz-linear-gradient(top, #1a1554 0%, #106f98 100%);
@@ -331,8 +329,11 @@ to {margin-top:40px;}
 }
 
 /* FAQ */
-#FAQ{background:url(../images/faq.jpg) no-repeat;background-size:100%;font-size:1.6rem;}
-#FAQ ul{width:80%;margin:3rem auto 0;}
+#FAQ{font-size:1.6rem;position:relative;}
+#FAQ:before{content:'';background:url(../images/faqUp.jpg) no-repeat left top;background-size:100%;position:absolute;width:50%;height:50%;top:0;left:0;}
+#FAQ:after{content:'';background:url(../images/faqDown.jpg) no-repeat right bottom;background-size:100%;position:absolute;width:50%;height:50%;bottom:0;right:0;}
+#FAQ h1{position:relative;z-index:2;}
+#FAQ ul{width:80%;margin:3rem auto 0;position:relative;z-index:2;}
 #FAQ ul li{width:100%;color:#666;border-bottom:1px solid #f1f2f2;padding:1rem;}
 #FAQ h3{cursor:pointer;}
 #FAQ h3:hover{color:#106c96;}
@@ -342,6 +343,8 @@ to {margin-top:40px;}
 @media (max-width: 767px){
 	#FAQ{font-size:1.4rem;}
 	#FAQ ul{width:100%;}
+	#FAQ:before{width:100%;height:100%;}
+	#FAQ:after{width:100%;height:100%;}
 }
 
 /* contact */

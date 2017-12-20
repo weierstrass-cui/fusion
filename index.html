@@ -638,14 +638,14 @@
                         $('#homeNav').addClass('current').siblings().removeClass('current');
                     }
                 }
-                
+
                 return false;
             });
             var checkNav = function(){
                 var sct = $(this).scrollTop();
                 $('#nav').toggleClass('dark', sct > 100);
                 $('section[id!="nav"]').each(function(){
-                    if( $(this).offset().top - sct <= navHeight ){
+                    if( parseInt($(this).offset().top - sct) <= navHeight ){
                         $('nav').find('a[href="#' + $(this).attr('id') + '"]').addClass('current').siblings().removeClass('current');
                     }
                 });
