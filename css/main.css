@@ -20,17 +20,30 @@ input,button,select,textarea{outline:none}
 }
 
 /* nav */
-#nav{position:fixed;width:100%;height:120px;top:0;left:0;z-index:9;padding:1rem 2rem;}
-#nav .logo{margin-top:-2rem;display:inline-block;}
+#nav{position:fixed;width:100%;top:0;left:0;z-index:9;padding:1rem 2rem;}
+#nav .logo{display:inline-block;}
 #nav .darkLogo{display:none;}
 #nav nav{width:calc(100% - 200px);height:85px;line-height:85px;float:right;display:inline-block;color:#fff;font-size:1.4rem;font-weight:bolder;text-align:right;}
 #nav nav a{display:inline-block;padding:0 1rem;height:5rem;position:relative;}
 #nav nav a.current:after, #nav nav a:hover:after{content:'';width:2.4rem;border-bottom:1px solid #fff;position:absolute;bottom:0;left:50%;margin-left:-1.2rem;}
-#nav.dark{background:#fff;box-shadow: 0 10px 10px rgba(0,0,0,0.4);}
+#nav.dark{background:#fff;box-shadow: 0 10px 10px rgba(0,0,0,0.15);}
 #nav.dark nav a{color:#333;}
 #nav.dark .darkLogo{display:block;}
 #nav.dark .lightLogo{display:none;}
 #nav.dark nav a.current:after, #nav.dark nav a:hover:after{border-color:#333;}
+#nav .phoneMenu{background:url(../images/menu.png) no-repeat;background-size:100%;position:absolute;left:2rem;top:50%;display:none;width:32px;height:32px;margin-top:-8px;}
+#nav.dark .phoneMenu{background-image:url(../images/darkMenu.png);}
+
+@media (max-width: 767px){
+	#nav{padding:0 2rem;}
+	#nav .logo{margin:0 auto;display:block;width:162px;}
+	#nav .phoneMenu{display:block;}
+	#nav nav{background:#fff;position:absolute;display:none;width:50%;height:auto;left:0;box-shadow:10px 10px 10px rgba(0,0,0,0.15);}
+	#nav nav a{width:100%;color:#333;display:block;text-align:left;height:60px;line-height:60px;}
+	#nav nav a.current, #nav nav a:hover{background:#106b95;color:#fff;}
+	#nav nav a.current:after, #nav nav a:hover:after{display:none;}
+}
+
 
 /* home */
 #home{
@@ -263,7 +276,7 @@ to {margin-top:40px;}
 	#chart, #token .tokenChart ul{width:100%;}
 }
 /* documents */
-#documents{background:url(../images/documents.jpg) no-repeat;background-size:cover;}
+#documents{background:#fff;}
 #documents .document{width:80%;margin:3rem auto 0;font-size:1.6rem;text-align:center;overflow:hidden;}
 #documents .document section{width:50%;display:inline-block;float:left;padding:0 0 2rem;}
 #documents .document span.img{background:url(../images/documents.png) no-repeat;width:212px;height:183px;display:block;margin:3rem auto 2rem;}
@@ -318,7 +331,7 @@ to {margin-top:40px;}
 }
 
 /* FAQ */
-#FAQ{font-size:1.6rem;}
+#FAQ{background:url(../images/faq.jpg) no-repeat;background-size:100%;font-size:1.6rem;}
 #FAQ ul{width:80%;margin:3rem auto 0;}
 #FAQ ul li{width:100%;color:#666;border-bottom:1px solid #f1f2f2;padding:1rem;}
 #FAQ h3{cursor:pointer;}

@@ -26,6 +26,7 @@
             <a href="#FAQ" title="FAQ">FAQ</a>
             <a href="#contact" title="Contact US">Contact US</a>
         </nav>
+        <a href="javascript://" class="phoneMenu"></a>
     </section>
 
     <!-- home -->
@@ -609,7 +610,7 @@
                 }
                 clearTimeout(drawTimmer);
                 drawTimmer = setTimeout(function(){
-                    if( $('body').width() < 767){
+                    if( $('body').width() < 767 ){
                         option.series[0].radius = '100%';
                         option.series[0].itemStyle.normal.label.position = 'inner';
                         option.series[0].itemStyle.normal.label.textStyle.color = '#1a1554';
@@ -623,16 +624,21 @@
             $(window).resize(function(){
                 drawChart();
             });
-            var navHeight = 120;
+            var navHeight = $('body').width() < 767 ? 58 : 109;
             $('#nav').find('a').bind('click', function(){
-                var path = $(this).attr('href').replace(/^#/, ''),
-                    top = $('#' + path).offset().top;
-                $('html,body').animate({'scrollTop': top - navHeight + 'px'});
-                if( $(this).parent().is('nav') ){
-                    $(this).addClass('current').siblings().removeClass('current');
+                if( $(this).is('.phoneMenu') ){
+                    $('nav').slideToggle();
                 }else{
-                    $('#homeNav').addClass('current').siblings().removeClass('current');
+                    var path = $(this).attr('href').replace(/^#/, ''),
+                        top = $('#' + path).offset().top;
+                    $('html,body').animate({'scrollTop': top - navHeight + 'px'});
+                    if( $(this).parent().is('nav') ){
+                        $(this).addClass('current').siblings().removeClass('current');
+                    }else{
+                        $('#homeNav').addClass('current').siblings().removeClass('current');
+                    }
                 }
+                
                 return false;
             });
             var checkNav = function(){
