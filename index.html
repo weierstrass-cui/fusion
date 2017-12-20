@@ -637,6 +637,9 @@
                     }else{
                         $('#homeNav').addClass('current').siblings().removeClass('current');
                     }
+                    if( $('.phoneMenu').is(':visible') ){
+                        $('nav').hide();
+                    }
                 }
 
                 return false;
