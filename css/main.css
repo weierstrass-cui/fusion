@@ -143,7 +143,7 @@ input,button,select,textarea{outline:none}
 }
 #technologies h1{color:#fff;}
 #technologies .technologies{width:80%;margin:5rem auto 3rem;height:550px;position:relative;}
-#technologies .technologies ul{width:500px;}
+#technologies .technologies ul{width:500px;margin-right:5rem;float:left;display:inline-block;}
 #technologies .technologies ul li{width:100%;height:120px;float:left;cursor:pointer;overflow:hidden;}
 #technologies .technologies .tech{width:500px;background:#fff;padding-bottom:10px;color:#333;opacity:0.6;transition:all .5s linear;left:0;top:0;position:relative;}
 #technologies .technologies .tech h3{position:relative;width:100%;height:110px;line-height:110px;color:#125b89;font-size:1.8rem;font-weight:bolder;border-bottom:1px solid #ececec;text-align:center;box-shadow:0 15px 25px rgba(0,0,0,0.2) inset;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
@@ -154,17 +154,20 @@ input,button,select,textarea{outline:none}
 #technologies .technologies ul li.current .tech{opacity:1;width:648px;z-index:2;top:-3rem;left:-2rem;}
 #technologies .technologies ul li.current .tech h3{height:95px;box-shadow:none;}
 #technologies .technologies ul li.current .tech article{opacity:1;}
-#technologies .technologies ul li.current img{display:block;position:absolute;left:115%;width:80%;top:0;}
+#technologies .technologies .techImages{float:right;width:calc(100% - 648px);height:500px;display:flex;flex-direction:column;justify-content:center;position:relative;}
+#technologies .technologies .techImages img{width:100%;display:none;position:absolute;top:10%;}
+#technologies .technologies .techImages img:first-child{display:block;}
 @media (max-width: 767px){
+	#technologies .technologies .techImages{display:none;}
 	#technologies .technologies{width:100%;height:auto;}
-	#technologies .technologies ul{width:100%;overflow:hidden;}
+	#technologies .technologies ul{width:100%;overflow:hidden;float:none;}
 	#technologies .technologies ul li{height:120px;float:none;}
 	#technologies .technologies .tech{background:none;width:100%;opacity:1;position:static;}
 	#technologies .technologies .tech h3{font-size:1.4rem;font-weight:normal;padding:0 1rem;color:#fff;box-shadow:0 15px 25px rgba(255,255,255,0.2) inset;border-bottom-color:rgba(255,255,255,0.2);}
 	#technologies .technologies .tech article{opacity:1;width:100%;color:#fff;}
 	#technologies .technologies ul li.current{margin-bottom:0;height:auto;}
 	#technologies .technologies ul li.current .tech{width:100%;}
-	#technologies .technologies ul li.current img{display:block;position:static;margin:1rem auto 0;}
+	#technologies .technologies ul li.current img{display:block;position:static;margin:1rem auto 0;width:90%;}
 }
 
 /* road map */
