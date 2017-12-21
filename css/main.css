@@ -10,7 +10,7 @@ ul,li{list-style:none;}
 input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
 input,button,select,textarea{outline:none}
 
-.section{padding:4rem;position:relative;}
+.section{padding:4rem;position:relative;min-height:100vh;}
 .section h1{width:100%;position:relative;margin:0 auto;text-align:center;font-size:5rem;padding:0.5rem 0;}
 .section h1:after{content:'';display:block;position:absolute;width:8%;border-bottom:1px solid #9b9ea0;margin-left:-4%;left:50%;bottom:0;}
 @media (max-width: 767px){
@@ -236,7 +236,7 @@ input,button,select,textarea{outline:none}
 #community .communitAnimate{background:url(../images/community.png) no-repeat center bottom;width:672px;height:507px;margin:6rem auto 0;overflow:hidden;position:relative;z-index:2;}
 @media (max-width: 767px){
 	#community .communitAll{width:90%;}
-	#community .communitAnimate{width:100%;background-size:100%;position:absolute;top:-6rem;left:0;background-position:center center;}
+	#community .communitAnimate{width:100%;height:225px;background-size:100%;background-position:center center;margin:0 auto;}
 }
 #cloud{position:absolute;top:0;left:0;width:100%;height:100%;}
 /* token sale */
@@ -382,7 +382,7 @@ input,button,select,textarea{outline:none}
 }
 
 /* contact */
-#contact{background:#373d41;font-size:1.4rem;}
+#contact{background:#373d41;font-size:1.4rem;min-height:auto;}
 #contact h1{color:#fff;}
 #contact .email{background:#444a4e;border:0 none;width:50%;height:4rem;line-height:4rem;margin:2rem auto;text-align:center;color:#fff;display:block;}
 #contact .subcribe{
