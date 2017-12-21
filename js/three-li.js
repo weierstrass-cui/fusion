@@ -56,6 +56,8 @@ var cloud, controls;
         });
 
         var range = 500;
+        geom.vertices = [];
+        geom.colors = [];
         for (var i = 0; i < createNums; i++) {
             var particle = new THREE.Vector3(Math.random() * range - range / 2,
                     Math.random() * range - range / 2, Math.random() * range - range / 2);
