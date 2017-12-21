@@ -143,6 +143,7 @@ input,button,select,textarea{outline:none}
     background: linear-gradient(to bottom, #01062b 0%,#010010 100%);
 }
 #vision h1{color:#fff;}
+#vision .visionPng{width:80%;margin:4rem auto 0;display:block;}
 #vision .vision{width:80%;height:413px;margin:5rem auto;position:relative;}
 #vision .vision ul{width:50%;}
 #vision .vision ul li{width:100%;border-bottom:1px solid #c1c2c5;cursor:pointer;overflow:hidden;color:#fff;font-size:1.4rem;padding:1rem;}
@@ -152,7 +153,7 @@ input,button,select,textarea{outline:none}
 #vision .vision li:first-child article{display:block;}
 #vision .vision .current img{opacity:1;}
 @media (max-width: 767px){
-	#vision .vision{width:100%;height:auto;}
+	#vision .vision{width:90%;height:auto;}
 	#vision .vision ul{width:100%;overflow:hidden;}
 	#vision .vision ul li img{position:static;width:80%;margin:1rem auto 0;display:block;display:none;}
 	#vision .vision .current article{display:block;}
