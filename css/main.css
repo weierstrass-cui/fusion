@@ -275,8 +275,9 @@ to {margin-top:40px;}
 	#chart, #token .tokenChart ul{width:100%;}
 }
 /* documents */
-#documents{background:#fff;}
-#documents .document{width:80%;margin:3rem auto 0;font-size:1.6rem;text-align:center;overflow:hidden;}
+#documents{background:#fff;position:relative;}
+#documents h1{position:relative;z-index:2;}
+#documents .document{width:80%;margin:3rem auto 0;font-size:1.6rem;text-align:center;overflow:hidden;position:relative;z-index:2;}
 #documents .document section{width:50%;display:inline-block;float:left;padding:0 0 2rem;}
 #documents .document span.img{background:url(../images/documents.png) no-repeat;width:212px;height:183px;display:block;margin:3rem auto 2rem;}
 #documents .document span.executive{background-position:-212px 0;}
@@ -292,6 +293,46 @@ to {margin-top:40px;}
 }
 #documents .document a span{width:228px;height:53px;line-height:53px;display:block;margin:1px auto;color:#fff;border-radius:3rem;cursor:pointer;}
 #documents .document a:hover span{background:#fff;color:#444a4e;}
+
+#documents .balls{position:absolute;width:100%;height:100%;overflow:hidden;top:0;left:0;}
+#documents .balls div{
+	background: -moz-linear-gradient(left, #fff 0%, #ccc 100%);
+    background: -webkit-gradient(linear, left, right, color-stop(0%,#fff), color-stop(100%,#ccc));
+    background: -webkit-linear-gradient(left, #fff 0%,#ccc 100%);
+    background: -o-linear-gradient(left, #fff 0%,#ccc 100%);
+    background: -ms-linear-gradient(left, #fff 0%,#ccc 100%);
+    background: linear-gradient(to right, #fff 0%,#ccc 100%);
+	border-radius:50%;position:absolute;
+}
+#b1{width:3rem;height:3rem;left:67%;animation:antiClockwise 4s linear infinite, ballFloat 60s linear infinite;}
+#b2{width:4rem;height:4rem;left:75%;animation:antiClockwise 10s linear infinite, ballFloat 72s linear infinite;}
+#b3{width:12rem;height:12rem;left:5%;animation:antiClockwise 17s linear infinite, ballFloat 30s linear infinite;}
+#b4{width:8rem;height:8rem;left:40%;animation:antiClockwise 9s linear infinite, ballFloat 25s linear infinite;}
+#b5{width:10rem;height:10em;left:15%;animation:antiClockwise 14s linear infinite, ballFloat 20s linear infinite;}
+#b6{width:15rem;height:15rem;left:50%;animation:antiClockwise 18s linear infinite, ballFloat 30s linear infinite;}
+#b7{width:8rem;height:8em;left:90%;animation:antiClockwise 20s linear infinite, ballFloat 36s linear infinite;}
+#b8{width:6rem;height:6rem;left:80%;animation:antiClockwise 5s linear infinite, ballFloat 24s linear infinite;}
+@keyframes ballRotate{
+	from {
+		transform:rotate(0deg);
+		-ms-transform:rotate(0deg);
+		-moz-transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+		-ms-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+	}
+}
+@keyframes ballFloat{
+	from {top: -15rem;}
+	to {top: 105%}
+}
+
 @media (max-width: 767px){
 	#documents .document{width:90%;}
 	#documents .document section{width:100%;}
