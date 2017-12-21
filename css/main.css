@@ -236,7 +236,7 @@ input,button,select,textarea{outline:none}
 #community .communitAnimate{background:url(../images/community.png) no-repeat center bottom;width:672px;height:507px;margin:6rem auto 0;overflow:hidden;position:relative;z-index:2;}
 @media (max-width: 767px){
 	#community .communitAll{width:90%;}
-	#community .communitAnimate{width:100%;background-size:100%;position:absolute;top:-3rem;left:0;background-position:center center;}
+	#community .communitAnimate{width:100%;background-size:100%;position:absolute;top:-6rem;left:0;background-position:center center;}
 }
 #cloud{position:absolute;top:0;left:0;width:100%;height:100%;}
 /* token sale */
