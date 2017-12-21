@@ -199,8 +199,8 @@ input,button,select,textarea{outline:none}
 
 /* road map */
 #roadMap{background:url(../images/roadMap.jpg) no-repeat;font-size:1.4rem;background-size:cover;}
-#roadMap h1{color:#fff;margin-top:4rem;}
-#roadMap .roadMap{background:rgba(1,18,39,0.7);width:70%;margin:3rem auto 0;overflow:visible;position:relative;padding-bottom:4rem;}
+#roadMap h1{color:#fff;margin-top:8rem;}
+#roadMap .roadMap{background:rgba(1,18,39,0.7);width:70%;margin:3rem auto 0;overflow:visible;position:relative;padding-bottom:12rem;}
 #roadMap .roadMap div{width:100%;overflow:visible;position:relative;border-top:1px solid #0c77c6;}
 #roadMap .roadMap div:last-child{border-bottom:1px solid #0c77c6;}
 #roadMap .roadMap article{width:100%;height:220px;padding:2rem 1rem 2rem 4rem;overflow:hidden;color:#fff;display:table-cell;vertical-align:middle;line-height:2;}
@@ -334,7 +334,7 @@ input,button,select,textarea{outline:none}
 
 /* team */
 #team{background:#27333b;font-size:1.6rem;}
-#team h1{color:#fff;margin-top:4rem;}
+#team h1{color:#fff;margin-top:8rem;}
 #team .team{width:80%;margin:3rem auto 9rem;}
 #team .team:last-child{padding-bottom:3rem;}
 #team .team h3{font-size:1.8rem;width:100%;padding:1.5rem 0;text-align:center;color:#fff;overflow:hidden;border:1px solid #fff;border-top-right-radius:2rem;border-top-left-radius:2rem;}
