@@ -1,5 +1,6 @@
 var scene, camera, renderer;
 var cloud, controls;
+var threeUse = {};
 (function(){
     function init() {
         scene = new THREE.Scene();//场景
@@ -83,7 +84,7 @@ var cloud, controls;
         renderer.render(scene, camera);
 
     }
-    window.onload = init;
+    threeUse.init = init;
     window.onresize = function(){
         $('#cloud').empty();
         init();

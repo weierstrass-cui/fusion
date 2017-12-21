@@ -10,14 +10,15 @@ ul,li{list-style:none;}
 input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
 input,button,select,textarea{outline:none}
 
-.section{padding:4rem;position:relative;min-height:100vh;}
+.section{position:relative;}
+.section .flex{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding:4rem;}
 .section h1{width:100%;position:relative;margin:0 auto;text-align:center;font-size:5rem;padding:0.5rem 0;}
 .section h1:after{content:'';display:block;position:absolute;width:8%;border-bottom:1px solid #9b9ea0;margin-left:-4%;left:50%;bottom:0;}
 @media (max-width: 767px){
 	body{width:100%;overflow-x:hidden;}
-	.section{padding:4rem 2rem;}
 	.section h1{font-size:4rem;}
 	.section h1:after{width:40%;margin-left:-20%;}
+	.section .flex{height:auto;overflow:visible;min-height:100%;padding:4rem 2rem;}
 }
 
 /* nav */
@@ -121,6 +122,7 @@ input,button,select,textarea{outline:none}
 	}
 }
 @media (max-width: 767px){
+	#home.section{padding:4rem 0rem;}
 	#home .home{width:90%;}
 	#home .article{border:1px solid #fff;position:relative;overflow:visible;}
 	#home .home article{background-color:rgba(0,0,0,0.7);padding:110px 2rem 2rem;background-size:80%;background-position:center 2rem;position:relative;width:100%;z-index:2;}
@@ -250,16 +252,16 @@ input,button,select,textarea{outline:none}
     font-size:1.4rem;
 }
 #token h1{color:#fff;}
-#token .tokenAll{background:#0f4c74;border:1px solid #fff;width:80%;margin:3rem auto;position:relative;overflow:visible;color:#fff;padding:1.5rem 2rem;line-height:2rem;}
+#token .tokenAll{background:#0f4c74;border:1px solid #fff;width:80%;margin:3rem auto;position:relative;overflow:visible;color:#fff;padding:1.5rem 2rem;line-height:1.8rem;}
 #token .tokenAll span{position:absolute;width:2rem;height:2rem;display:block;}
 #token .tokenAll .left-top{border-top:3px solid #fff;border-left:3px solid #fff;top:-2px;left:-2px;}
 #token .tokenAll .right-top{border-top:3px solid #fff;border-right:3px solid #fff;top:-2px;right:-2px;}
 #token .tokenAll .left-bottom{border-bottom:3px solid #fff;border-left:3px solid #fff;bottom:-2px;left:-2px;}
 #token .tokenAll .right-bottom{border-bottom:3px solid #fff;border-right:3px solid #fff;bottom:-2px;right:-2px;}
-#token .tokenChart{width:80%;margin:6rem auto 0;overflow:hidden;}
+#token .tokenChart{width:80%;margin:0 auto;overflow:hidden;}
 #chart{float:right;display:inline-block;width:50%;height:392px;}
 #token .tokenChart ul{float:right;display:inline-block;width:50%;}
-#token .tokenChart ul li{width:100%;overflow:hidden;color:#fff;line-height:2;}
+#token .tokenChart ul li{width:100%;overflow:hidden;color:#fff;line-height:1.8;}
 #token .tokenChart li span{float:left;display:inline-block;width:2.5rem;}
 #token .tokenChart li article{float:left;display:inline-block;width:calc(100% - 2.5rem);}
 @media (max-width: 767px){
