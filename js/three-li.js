@@ -21,12 +21,12 @@ var cloud, controls;
             this.createNums = 5000;//默认创建5000个粒子
             this.size = 7;//默认大小
             this.transparent = true;//透明的
-            this.opacity = 0.8;//不透明
+            this.opacity = 0.6;//不透明
             this.vertexColors = true;//坐标点集颜色
             this.color = '#3f7fa2';//控制器本身颜色
             this.sizeAttenuation = true;//如果为false 则所有粒子拥有相同的尺寸。无论距离相机多远
             this.rotateSystem = true;//是否旋转
-            this.rotateSpeed = 0.005;//默认旋转速度
+            this.rotateSpeed = 0.001;//默认旋转速度
             this.redraw = function () {
                 if (scene.getObjectByName('particles')) {
                     scene.remove(scene.getObjectByName('particles'));
