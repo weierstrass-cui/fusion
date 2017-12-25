@@ -229,10 +229,11 @@ input,button,select,textarea{outline:none}
 #community .communitAll .right-top{border-top:3px solid #fff;border-right:3px solid #fff;top:-2px;right:-2px;}
 #community .communitAll .left-bottom{border-bottom:3px solid #fff;border-left:3px solid #fff;bottom:-2px;left:-2px;}
 #community .communitAll .right-bottom{border-bottom:3px solid #fff;border-right:3px solid #fff;bottom:-2px;right:-2px;}
-#community .communitAnimate{background:url(../images/community.png) no-repeat center bottom;width:672px;height:507px;margin:-6rem auto 0;overflow:hidden;position:relative;z-index:2;}
+#community .communitAnimate{width:672px;margin:-5rem auto 0;overflow:hidden;position:relative;z-index:2;}
+#community .communitAnimate img{width:100%;display:block;}
 @media (max-width: 767px){
 	#community .communitAll{width:90%;}
-	#community .communitAnimate{width:100%;height:225px;background-size:100%;background-position:center center;margin:0 auto;}
+	#community .communitAnimate{width:100%;height:250px;background-size:100%;background-position:center center;margin:0 auto;}
 }
 #cloud{position:absolute;top:0;left:0;width:100%;height:100%;}
 /* token sale */
@@ -245,14 +246,14 @@ input,button,select,textarea{outline:none}
     background: linear-gradient(to bottom, #106f98 0%,#1a1554 100%);
     font-size:1.4rem;
 }
-#token h1{color:#fff;}
+#token h1{color:#fff;margin-top:8rem;}
 #token .tokenAll{background:#0f4c74;border:1px solid #fff;width:80%;margin:3rem auto;position:relative;overflow:visible;color:#fff;padding:1.5rem 2rem;line-height:1.8rem;}
 #token .tokenAll span{position:absolute;width:2rem;height:2rem;display:block;}
 #token .tokenAll .left-top{border-top:3px solid #fff;border-left:3px solid #fff;top:-2px;left:-2px;}
 #token .tokenAll .right-top{border-top:3px solid #fff;border-right:3px solid #fff;top:-2px;right:-2px;}
 #token .tokenAll .left-bottom{border-bottom:3px solid #fff;border-left:3px solid #fff;bottom:-2px;left:-2px;}
 #token .tokenAll .right-bottom{border-bottom:3px solid #fff;border-right:3px solid #fff;bottom:-2px;right:-2px;}
-#token .tokenChart{width:80%;margin:0 auto;overflow:hidden;}
+#token .tokenChart{width:80%;margin:0 auto 5rem;overflow:hidden;}
 #chart{float:right;display:inline-block;width:50%;height:392px;}
 #token .tokenChart ul{float:right;display:inline-block;width:50%;margin-top:3rem;}
 #token .tokenChart ul li{width:100%;overflow:hidden;color:#fff;line-height:1.8;}
@@ -331,8 +332,8 @@ input,button,select,textarea{outline:none}
 #team h1{color:#fff;margin-top:8rem;}
 #team .team{width:80%;margin:3rem auto 9rem;}
 #team .team:last-child{padding-bottom:3rem;}
-#team .team h3{font-size:1.8rem;width:100%;padding:1.5rem 0;text-align:center;color:#fff;overflow:hidden;border:1px solid #fff;border-top-right-radius:2rem;border-top-left-radius:2rem;}
-#team .team h3 span{display:inline-block;border:1px solid #fff;border-radius:3rem;width:40%;height:3rem;line-height:3rem;}
+#team .team h3{font-size:1.8rem;width:100%;padding:1.5rem 0;text-align:center;color:#fff;overflow:hidden;border:2px solid #fff;border-top-right-radius:2rem;border-top-left-radius:2rem;}
+#team .team h3 span{display:inline-block;border:2px solid #fff;border-radius:3rem;width:40%;height:3rem;line-height:3rem;}
 #team .team .members{
 	background: -moz-linear-gradient(top, #fff 75%, #27333b 100%);
     background: -webkit-gradient(linear, top, bottom, color-stop(75%,#fff), color-stop(100%,#27333b));
@@ -342,11 +343,11 @@ input,button,select,textarea{outline:none}
     background: linear-gradient(to bottom, #fff 75%,#27333b 100%);
     width:100%;overflow:hidden;
 }
-#team .team .members .list{background:#27333b;width:calc(100% - 2px);margin:0 auto;color:#fff;overflow:hidden;text-align:center;}
+#team .team .members .list{background:#27333b;width:calc(100% - 4px);margin:0 auto;color:#fff;overflow:hidden;text-align:center;}
 #team .team .members ul{width:100%;overflow:hidden;position:relative;}
-#team .team .members ul:before{content:'';display:block;width:100%;border-bottom:1px solid #fff;position:absolute;top:calc(5rem + 47px);left:0;}
+#team .team .members ul:before{content:'';display:block;width:100%;border-bottom:2px solid #fff;position:absolute;top:calc(5rem + 47px);left:0;}
 #team .team .members .member{width:18%;display:inline-block;overflow:hidden;margin:5rem 0 0;vertical-align:top;position:relative;}
-#team .team .member img{width:94px;border:1px solid #fff;display:inline-block;border-radius:50%;padding:2px;position:relative;}
+#team .team .member img{background:#27333B;width:94px;border:2px solid #fff;display:inline-block;border-radius:50%;padding:4px;position:relative;}
 #team .team .member h5{margin:0.8rem auto;position:relative;}
 #team .team .member span{color:#687176;display:block;position:relative;}
 #team .team .member p{font-size:1.4rem;width:80%;margin:0.8rem auto 0;text-align:left;position:relative;}
@@ -362,8 +363,8 @@ input,button,select,textarea{outline:none}
 #FAQ{font-size:1.6rem;position:relative;}
 #FAQ:before{content:'';background:url(../images/faqUp.jpg) no-repeat left top;background-size:100%;position:absolute;width:50%;height:50%;top:0;left:0;}
 #FAQ:after{content:'';background:url(../images/faqDown.jpg) no-repeat right bottom;background-size:100%;position:absolute;width:50%;height:50%;bottom:0;right:0;}
-#FAQ h1{position:relative;z-index:2;}
-#FAQ ul{width:80%;margin:3rem auto 0;position:relative;z-index:2;}
+#FAQ h1{position:relative;z-index:2;margin-top:8rem;}
+#FAQ ul{width:80%;margin:3rem auto 8rem;position:relative;z-index:2;}
 #FAQ ul li{width:100%;color:#666;border-bottom:1px solid #f1f2f2;padding:1rem;}
 #FAQ h3{cursor:pointer;}
 #FAQ h3:hover{color:#106c96;}
