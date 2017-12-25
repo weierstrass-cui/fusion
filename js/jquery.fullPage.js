@@ -1072,6 +1072,14 @@
                     scrollings = [];
                 }
 
+                if( scrollable.length && (( isScrolled('top', scrollable) || isScrolled('bottom', scrollable) ) && scrollable.attr('isLock') == 'true') ){
+                    setTimeout(function(){
+                        scrollable.attr('isLock', false);
+                    }, 1000);
+
+                    return false;
+                }
+
                 if(canScroll){
                     var averageEnd = getAverage(scrollings, 10);
                     var averageMiddle = getAverage(scrollings, 70);
