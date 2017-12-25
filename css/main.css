@@ -346,11 +346,16 @@ input,button,select,textarea{outline:none}
 #team .team .members .list{background:#27333b;width:calc(100% - 4px);margin:0 auto;color:#fff;overflow:hidden;text-align:center;}
 #team .team .members ul{width:100%;overflow:hidden;position:relative;}
 #team .team .members ul:before{content:'';display:block;width:100%;border-bottom:2px solid #fff;position:absolute;top:calc(5rem + 47px);left:0;}
-#team .team .members .member{width:18%;display:inline-block;overflow:hidden;margin:5rem 0 0;vertical-align:top;position:relative;}
-#team .team .member img{background:#27333B;width:94px;border:2px solid #fff;display:inline-block;border-radius:50%;padding:4px;position:relative;}
+#team .team .members .member{width:23%;display:inline-block;overflow:hidden;margin:5rem 0 0;vertical-align:top;position:relative;}
+#team .team .member .img{background:#27333B;width:94px;border:2px solid #fff;display:inline-block;border-radius:50%;padding:4px;position:relative;}
+#team .team .member img{display:block;width:100%;border-radius:50%;}
+#team .team .member:hover .img:after{content:'';background:url(../images/linkin.png) no-repeat;background-size:100%;position:absolute;width:calc(100% - 8px);height:calc(100% - 8px);top:4px;left:4px;border-radius:50%;}
 #team .team .member h5{margin:0.8rem auto;position:relative;}
 #team .team .member span{color:#687176;display:block;position:relative;}
-#team .team .member p{font-size:1.4rem;width:80%;margin:0.8rem auto 0;text-align:left;position:relative;}
+#team .team .member p, #team .team .member dl{font-size:1.4rem;width:80%;margin:0.8rem auto 0;text-align:left;position:relative;line-height:1.5;}
+#team .team .member dt{float:left;display:inline-block;width:18px;}
+#team .team .member dd{float:left;display:inline-block;width:calc(100% - 18px);}
+
 @media (max-width: 767px){
 	#team .team{width:90%;}
 	#team .team h3 span{width:70%;}
