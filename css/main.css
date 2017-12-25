@@ -122,18 +122,18 @@ input,button,select,textarea{outline:none}
 }
 @keyframes clockwise3d_2{
 	from {
-		transform:rotateX(60deg) rotateY(60deg) rotateZ(60deg) rotate(0deg);
-		-ms-transform:rotateX(60deg) rotateY(60deg) rotateZ(60deg) rotate(0deg);
-		-moz-transform:rotateX(60deg) rotateY(60deg) rotateZ(60deg) rotate(0deg);
-		-webkit-transform:rotateX(60deg) rotateY(60deg) rotateZ(60deg) rotate(0deg);
-		-o-transform:rotateX(60deg) rotateY(60deg) rotateZ(60deg) rotate(0deg);
+		transform:rotateX(10deg) rotateY(10deg) rotateZ(10deg) rotate(30deg);
+		-ms-transform:rotateX(10deg) rotateY(10deg) rotateZ(10deg) rotate(30deg);
+		-moz-transform:rotateX(10deg) rotateY(10deg) rotateZ(10deg) rotate(30deg);
+		-webkit-transform:rotateX(10deg) rotateY(10deg) rotateZ(10deg) rotate(30deg);
+		-o-transform:rotateX(10deg) rotateY(10deg) rotateZ(10deg) rotate(30deg);
 	}
 	to {
-		transform:rotateX(-300deg) rotateY(-300deg) rotateZ(-300deg) rotate(360deg);
-		-ms-transform:rotateX(-300deg) rotateY(-300deg) rotateZ(-300deg) rotate(360deg);
-		-moz-transform:rotateX(-300deg) rotateY(-300deg) rotateZ(-300deg) rotate(360deg);
-		-webkit-transform:rotateX(-300deg) rotateY(-300deg) rotateZ(-300deg) rotate(360deg);
-		-o-transform:rotateX(-300deg) rotateY(-300deg) rotateZ(-300deg) rotate(360deg);
+		transform:rotateX(370deg) rotateY(370deg) rotateZ(370deg) rotate(390deg);
+		-ms-transform:rotateX(370deg) rotateY(370deg) rotateZ(370deg) rotate(390deg);
+		-moz-transform:rotateX(370deg) rotateY(370deg) rotateZ(370deg) rotate(390deg);
+		-webkit-transform:rotateX(370deg) rotateY(370deg) rotateZ(370deg) rotate(390deg);
+		-o-transform:rotateX(370deg) rotateY(370deg) rotateZ(370deg) rotate(390deg);
 	}
 }
 
