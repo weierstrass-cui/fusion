@@ -57,7 +57,7 @@ input,button,select,textarea{outline:none}
 }
 #home .home{width:80%;height:100%;margin:0 auto;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;}
 #home .article{width:100%;overflow:hidden;}
-#home .home article{background:url(../images/fusion.png) no-repeat center top;background-size:100%;width:39%;max-width:672px;padding-top:160px;color:#fff;font-size:1.6rem;line-height:2;}
+#home .home article{background:url(../images/fusion.png) no-repeat center top;background-size:100%;width:40%;max-width:672px;padding-top:160px;color:#fff;font-size:1.6rem;line-height:2;}
 #home .article span{display:none;}
 #home .homeBG{background:url(../images/home.png) no-repeat 85% bottom;width:100%;height:100%;position:absolute;bottom:0;}
 #satellite{
@@ -425,6 +425,8 @@ input,button,select,textarea{outline:none}
 #FAQ h3:before{content: '+';margin-right:1rem;font-weight:bolder;font-size:1.6rem;display:inline-block;width:15px;text-align:center;line-height:1.5;}
 #FAQ .current h3:before{content: '-';font-size:2rem;}
 #FAQ article{width:95%;margin:1rem auto 0;display:none;line-height:1.8;}
+#FAQ article p{padding-left:2rem;position:relative;}
+#FAQ article p:before{content:'•';position:absolute;left:1rem;}
 @media (max-width: 767px){
 	#FAQ{font-size:1.4rem;}
 	#FAQ ul{width:100%;}
