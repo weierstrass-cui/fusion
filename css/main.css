@@ -90,53 +90,6 @@ input,button,select,textarea{outline:none}
 	background:url(../images/satellite/g7.png) no-repeat center center;width:339px;height:415px;margin:-224px 0 0 -165px;
 }
 
-#cctv{width:683px;height:552px;position:absolute;right:-5rem;top:50%;margin-top:-276px;}
-#cctv .cctvCore{
-	background: -moz-linear-gradient(top, #fff 0%, #777 100%);
-    background: -webkit-gradient(linear, top, bottom, color-stop(0%,#fff), color-stop(100%,#777));
-    background: -webkit-linear-gradient(top, #fff 0%,#777 100%);
-    background: -o-linear-gradient(top, #fff 0%,#777 100%);
-    background: -ms-linear-gradient(top, #fff 0%,#777 100%);
-    background: linear-gradient(to bottom, #fff 0%,#777 100%);
-	width:100px;height:100px;position:absolute;top:50%;left:50%;margin:-50px 0 0 -50px;border-radius:50%;
-}
-#cctv .circle{background:url(../images/circle.png) no-repeat;background-size:100%;width:500px;height:500px;position:absolute;top:50%;left:50%;margin:-250px 0 0 -250px;}
-#cctv .cctvC1{animation:clockwise3d_1 25s linear infinite;}
-#cctv .cctvC2{animation:clockwise3d_2 20s linear infinite;}
-
-@keyframes clockwise3d_1{
-	from {
-		transform:rotateX(120deg) rotateY(120deg) rotateZ(120deg) rotate(0deg);
-		-ms-transform:rotateX(120deg) rotateY(120deg) rotateZ(120deg) rotate(0deg);
-		-moz-transform:rotateX(120deg) rotateY(120deg) rotateZ(120deg) rotate(0deg);
-		-webkit-transform:rotateX(120deg) rotateY(120deg) rotateZ(120deg) rotate(0deg);
-		-o-transform:rotateX(120deg) rotateY(120deg) rotateZ(120deg) rotate(0deg);
-	}
-	to {
-		transform:rotateX(480deg) rotateY(480deg) rotateZ(480deg) rotate(360deg);
-		-ms-transform:rotateX(480deg) rotateY(480deg) rotateZ(480deg) rotate(360deg);
-		-moz-transform:rotateX(480deg) rotateY(480deg) rotateZ(480deg) rotate(360deg);
-		-webkit-transform:rotateX(480deg) rotateY(480deg) rotateZ(480deg) rotate(360deg);
-		-o-transform:rotateX(480deg) rotateY(480deg) rotateZ(480deg) rotate(360deg);
-	}
-}
-@keyframes clockwise3d_2{
-	from {
-		transform:rotateX(10deg) rotateY(10deg) rotateZ(10deg) rotate(30deg);
-		-ms-transform:rotateX(10deg) rotateY(10deg) rotateZ(10deg) rotate(30deg);
-		-moz-transform:rotateX(10deg) rotateY(10deg) rotateZ(10deg) rotate(30deg);
-		-webkit-transform:rotateX(10deg) rotateY(10deg) rotateZ(10deg) rotate(30deg);
-		-o-transform:rotateX(10deg) rotateY(10deg) rotateZ(10deg) rotate(30deg);
-	}
-	to {
-		transform:rotateX(370deg) rotateY(370deg) rotateZ(370deg) rotate(390deg);
-		-ms-transform:rotateX(370deg) rotateY(370deg) rotateZ(370deg) rotate(390deg);
-		-moz-transform:rotateX(370deg) rotateY(370deg) rotateZ(370deg) rotate(390deg);
-		-webkit-transform:rotateX(370deg) rotateY(370deg) rotateZ(370deg) rotate(390deg);
-		-o-transform:rotateX(370deg) rotateY(370deg) rotateZ(370deg) rotate(390deg);
-	}
-}
-
 @keyframes clockwise{
 	from {
 		transform:rotate(0deg);
@@ -172,7 +125,12 @@ input,button,select,textarea{outline:none}
 @media (max-width: 767px){
 	#home.section{padding:4rem 0rem;}
 	#home .home{width:90%;}
-	#home .article{border:1px solid #fff;position:relative;overflow:visible;}
+	#home .article{
+		-webkit-transform: translateZ(400px);
+		-moz-transform: translateZ(400px);
+		-ms-transform: translateZ(400px);
+		transform: translateZ(400px);
+		border:1px solid #fff;position:relative;overflow:visible;}
 	#home .home article{background-color:rgba(0,0,0,0.7);padding:110px 2rem 2rem;background-size:80%;background-position:center 2rem;position:relative;width:100%;z-index:2;}
 	#home .article span{position:absolute;width:2rem;height:2rem;display:block;z-index:3;}
 	#home .article .left-top{border-top:3px solid #fff;border-left:3px solid #fff;top:-2px;left:-2px;}
@@ -191,7 +149,7 @@ input,button,select,textarea{outline:none}
     background: linear-gradient(to bottom, #01062b 0%,#010010 100%);
 }
 #vision h1{color:#fff;}
-#vision .visionPng{height:calc(100vh - 200px);margin:4rem auto 0;display:block;}
+#vision .visionPng{max-height:calc(100vh - 200px);margin:4rem auto 0;display:block;}
 #vision .vision{width:80%;height:413px;margin:5rem auto;position:relative;}
 #vision .vision ul{width:50%;}
 #vision .vision ul li{width:100%;border-bottom:1px solid #c1c2c5;cursor:pointer;overflow:hidden;color:#fff;font-size:1.4rem;padding:1rem;}
@@ -202,6 +160,7 @@ input,button,select,textarea{outline:none}
 #vision .vision .current img{opacity:1;}
 @media (max-width: 767px){
 	#vision .vision{width:90%;height:auto;}
+	#vision .visionPng{max-width:90%;}
 	#vision .vision ul{width:100%;overflow:hidden;}
 	#vision .vision ul li img{position:static;width:80%;margin:1rem auto 0;display:block;display:none;}
 	#vision .vision .current article{display:block;}
@@ -244,6 +203,7 @@ input,button,select,textarea{outline:none}
 	-o-transform:rotate(180deg);
 	right:-110px;
 }
+#roadMap .bigger{font-size:2.6rem;}
 @media (max-width: 767px){
 	#roadMap .roadMap{width:90%;}
 	#roadMap .roadMap div{border-bottom:1px solid #0c77c6;border-top:0 none;overflow:hidden;}
@@ -386,7 +346,7 @@ input,button,select,textarea{outline:none}
 #team .team .member p, #team .team .member dl{font-size:1.4rem;width:80%;margin:0.8rem auto 0;text-align:left;position:relative;line-height:1.5;}
 #team .team .member dt{float:left;display:inline-block;width:18px;}
 #team .team .member dd{float:left;display:inline-block;width:calc(100% - 18px);}
-#team .team .member:after{content:'';background:url(../images/linkinLogo.png) no-repeat;width:29px;height:29px;display:block;margin:1rem auto;position:absolute;bottom:0;left:50%;margin-left:-15px;}
+#team .team .member a{background:url(../images/linkinLogo.png) no-repeat;width:29px;height:29px;display:block;margin:1rem auto;position:absolute;bottom:0;left:50%;margin-left:-15px;}
 
 @media (max-width: 767px){
 	#team .team{width:90%;}
@@ -402,6 +362,11 @@ input,button,select,textarea{outline:none}
 #friendLink ul{width:80%;margin:5rem auto;overflow:hidden;}
 #friendLink ul li{width:33%;float:left;display:inline-block;height:200px;line-height:300px;text-align:center;}
 #friendLink ul li img{max-width:100%;max-height:100%;}
+@media (max-width: 767px){
+	#friendLink ul{width:90%;}
+	#friendLink ul li{width:100%;}
+}
+
 
 /* FAQ */
 #FAQ{font-size:1.6rem;position:relative;}
