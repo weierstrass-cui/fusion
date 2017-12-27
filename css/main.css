@@ -212,32 +212,16 @@ input,button,select,textarea{outline:none}
 #technologies{background: #11638f}
 #technologies h1{color:#fff;}
 #technologies .technologies{width:80%;margin:5rem auto 3rem;height:550px;position:relative;}
-#technologies .technologies ul{width:40%;margin-right:3rem;float:left;display:inline-block;}
-#technologies .technologies ul li{width:100%;height:120px;float:left;cursor:pointer;overflow:hidden;}
-#technologies .technologies .tech{width:100%;background:#fff;padding-bottom:10px;color:#333;opacity:0.6;transition:all .5s linear;left:0;top:0;position:relative;}
-#technologies .technologies .tech h3{position:relative;width:100%;height:95px;line-height:110px;color:#125b89;font-size:1.6rem;font-weight:bolder;border-bottom:1px solid #ececec;text-align:center;box-shadow:0 15px 25px rgba(0,0,0,0.2) inset;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
-#technologies .technologies .tech h3:after{content:'';width:20%;height:2px;background:#15afff;position:absolute;bottom:0;left:50%;margin-left:-10%;border-radius:2rem;}
-#technologies .technologies .tech article{opacity:0;width:120%;padding:2rem;line-height:2;font-size:1.4rem;text-indent:1.6rem;}
-#technologies .technologies ul img{display:none;}
-#technologies .technologies ul li.current{margin-bottom:10rem;overflow:visible;}
-#technologies .technologies ul li.current .tech{opacity:1;width:120%;z-index:2;top:-3rem;left:-2rem;}
-#technologies .technologies ul li.current .tech h3{height:95px;box-shadow:none;}
-#technologies .technologies ul li.current .tech article{opacity:1;width:100%;}
-#technologies .technologies .techImages{float:right;width:calc(60% - 3rem);height:500px;display:flex;flex-direction:column;justify-content:center;position:relative;}
-#technologies .technologies .techImages img{width:100%;display:none;position:absolute;top:10%;}
-#technologies .technologies .techImages img:first-child{display:block;}
-@media (max-width: 767px){
-	#technologies .technologies .techImages{display:none;}
-	#technologies .technologies{width:100%;height:auto;}
-	#technologies .technologies ul{width:100%;overflow:hidden;float:none;}
-	#technologies .technologies ul li{height:120px;float:none;}
-	#technologies .technologies .tech{background:none;width:100%;opacity:1;position:static;}
-	#technologies .technologies .tech h3{font-size:1.4rem;font-weight:normal;padding:0 1rem;color:#fff;box-shadow:0 15px 25px rgba(255,255,255,0.2) inset;border-bottom-color:rgba(255,255,255,0.2);}
-	#technologies .technologies .tech article{opacity:1;width:100%;color:#fff;}
-	#technologies .technologies ul li.current{margin-bottom:0;height:auto;}
-	#technologies .technologies ul li.current .tech{width:100%;}
-	#technologies .technologies ul li.current img{display:block;position:static;margin:1rem auto 0;width:90%;}
-}
+#technologies .technologies ul, #technologies .technologies ul li{width:100%;}
+#technologies .technologies .tech{width:100%;padding-bottom:10px;color:#333;overflow:hidden;}
+#technologies .technologies .tech img{width:60%;display:block;margin:0 auto;}
+#technologies .technologies .tech h3{width:100%;color:#fff;font-size:1.6rem;font-weight:bolder;text-align:center;}
+#technologies .technologies .tech article{background:rgba(0,0,0,0.2);border:1px solid #fff;color:#fff;width:80%;margin:3rem auto;padding:2rem;line-height:2;font-size:1.4rem;text-indent:1.6rem;position:relative;}
+#technologies .technologies .tech article span{position:absolute;width:2rem;height:2rem;display:block;}
+#technologies .technologies .tech article  .left-top{border-top:3px solid #fff;border-left:3px solid #fff;top:-2px;left:-2px;}
+#technologies .technologies .tech article  .right-top{border-top:3px solid #fff;border-right:3px solid #fff;top:-2px;right:-2px;}
+#technologies .technologies .tech article .left-bottom{border-bottom:3px solid #fff;border-left:3px solid #fff;bottom:-2px;left:-2px;}
+#technologies .technologies .tech article  .right-bottom{border-bottom:3px solid #fff;border-right:3px solid #fff;bottom:-2px;right:-2px;}
 
 /* road map */
 #roadMap{background:url(../images/roadMap.jpg) no-repeat;font-size:1.4rem;background-size:cover;}
@@ -330,7 +314,6 @@ input,button,select,textarea{outline:none}
 }
 #documents .document a span{width:228px;height:53px;line-height:53px;display:block;margin:1px auto;color:#fff;border-radius:3rem;cursor:pointer;}
 #documents .document a:hover span{background:#fff;color:#444a4e;}
-
 #documents .balls{position:absolute;width:100%;height:100%;overflow:hidden;top:0;left:0;}
 #documents .balls div{
 	background: -moz-linear-gradient(left, #fff 0%, #ccc 100%);

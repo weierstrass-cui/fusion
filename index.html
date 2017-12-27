@@ -108,33 +108,43 @@
             <h1>Technologies</h1>
             <div class="technologies">
                 <ul>
-                    <li class="current">
+                    <li>
                         <div class="tech">
-                            <h3>Distributed control rights management (DCRM)</h3>
                             <img alt="Distributed control rights management (DCRM)" src="./images/technologies/t1.gif" />
-                            <article>DCRM is the process that hands over the control of digital assets by that individuals or centralized organizations to decentralized blockchain’s management. The distributed generation and distributed storage of private key ensure that no single individual can access the complete private key, which means there is not a single node to obtain the control of digital assets in the state of distributed control rights management.</article>
+                            <h3>Distributed control rights management (DCRM)</h3>
+                            <article>DCRM is the process that hands over the control of digital assets by that individuals or centralized organizations to decentralized blockchain’s management. The distributed generation and distributed storage of private key ensure that no single individual can access the complete private key, which means there is not a single node to obtain the control of digital assets in the state of distributed control rights management.
+                                <span class="left-top"></span>
+                                <span class="right-top"></span>
+                                <span class="left-bottom"></span>
+                                <span class="right-bottom"></span>
+                            </article>
                         </div>
                     </li>
                     <li>
                         <div class="tech">
-                            <h3>Multiple Triggering Mechanism (MTM)</h3>
                             <img alt="Multiple Triggering Mechanism (MTM)" src="./images/technologies/t2.gif" />
-                            <article>In addition to supporting the transaction triggering mechanism, timing and event triggering are also introduced in smart contract. The three triggering modes are formed by abstracting various financial application scenarios and can satisfy various types of requirements for smart contract trigger needs in complex cryptofinancial applications. This enables DSvr and DApp architecture.</article>
+                            <h3>Multiple Triggering Mechanism (MTM)</h3>
+                            <article>In addition to supporting the transaction triggering mechanism, timing and event triggering are also introduced in smart contract. The three triggering modes are formed by abstracting various financial application scenarios and can satisfy various types of requirements for smart contract trigger needs in complex cryptofinancial applications. This enables DSvr and DApp architecture.
+                                <span class="left-top"></span>
+                                <span class="right-top"></span>
+                                <span class="left-bottom"></span>
+                                <span class="right-bottom"></span>
+                            </article>
                         </div>
                     </li>
                     <li>
                         <div class="tech">
-                            <h3>Hierarchical Hybrid Consensus Mechanism (HHCM)</h3>
                             <img alt="Hierarchical Hybrid Consensus Mechanism (HHCM)" src="./images/technologies/t3.gif" />
-                            <article>HHCM realizes the balance between PoW and PoS, combines the advantages of both, avoids the centralized trend of computing power or stake and achieves a reasonable and stable energy efficiency ratio for FUSION system. HHCM realizes parallel processing of transactions, by built-in grouping parallel mechanism.</article>
+                            <h3>Hierarchical Hybrid Consensus Mechanism (HHCM)</h3>
+                            <article>HHCM realizes the balance between PoW and PoS, combines the advantages of both, avoids the centralized trend of computing power or stake and achieves a reasonable and stable energy efficiency ratio for FUSION system. HHCM realizes parallel processing of transactions, by built-in grouping parallel mechanism.
+                                <span class="left-top"></span>
+                                <span class="right-top"></span>
+                                <span class="left-bottom"></span>
+                                <span class="right-bottom"></span>
+                            </article>
                         </div>
                     </li>
                 </ul>
-                <div class="techImages">
-                    <img alt="Distributed control rights management (DCRM)" src="./images/technologies/t1.gif" />
-                    <img alt="Multiple Triggering Mechanism (MTM)" src="./images/technologies/t2.gif" />
-                    <img alt="Hierarchical Hybrid Consensus Mechanism (HHCM)" src="./images/technologies/t3.gif" />
-                </div>
             </div>
         </section>
 
@@ -756,10 +766,6 @@
         $(function(){
             $('#FAQ').find('li').bind('click', function(){
                 $(this).addClass('current').find('article').slideDown().end().siblings('.current').removeClass('current').find('article').slideUp();
-            });
-            $('#technologies').find('.technologies').find('li').hover(function(){
-                $(this).addClass('current').siblings('.current').removeClass('current');
-                $('.techImages').find('img:nth-child(' + ($(this).index() - 0 + 1) + ')').fadeIn().siblings().fadeOut();
             });
             $('#vision').find('.vision').find('li').bind('click', function(){
                 $(this).addClass('current').find('article').slideDown().end().siblings('.current').removeClass('current').find('article').slideUp();
