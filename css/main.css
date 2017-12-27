@@ -397,7 +397,7 @@ input,button,select,textarea{outline:none}
 }
 
 /* friendLink */
-#friendLink{background:#222;}
+#friendLink{background:#1b262d;}
 #friendLink h1{color:#fff;}
 #friendLink ul{width:80%;margin:5rem auto;overflow:hidden;}
 #friendLink ul li{width:33%;float:left;display:inline-block;height:200px;line-height:300px;text-align:center;}
