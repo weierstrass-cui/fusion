@@ -413,6 +413,13 @@ input,button,select,textarea{outline:none}
 	#team .team .members .member:before{content:'';display:block;width:100%;border-bottom:1px solid #fff;position:absolute;top:47px;left:0;}
 }
 
+/* friendLink */
+#friendLink{background:#222;}
+#friendLink h1{color:#fff;}
+#friendLink ul{width:80%;margin:5rem auto;overflow:hidden;}
+#friendLink ul li{width:33%;float:left;display:inline-block;height:200px;line-height:300px;text-align:center;}
+#friendLink ul li img{max-width:100%;max-height:100%;}
+
 /* FAQ */
 #FAQ{font-size:1.6rem;position:relative;}
 #FAQ:before{content:'';background:url(../images/faqUp.jpg) no-repeat left top;background-size:100%;position:absolute;width:50%;height:50%;top:0;left:0;}
