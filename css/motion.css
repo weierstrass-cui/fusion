@@ -168,11 +168,11 @@
   }
 }
 
-div,
-ul,
-span,
-li,
-img {
+#page2 div,
+#page2 ul,
+#page2 span,
+#page2 li,
+#page2 img {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
