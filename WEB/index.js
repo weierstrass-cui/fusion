@@ -65,4 +65,4 @@ for(var i in queryFunctions){
 	app.post(i, queryFunctions[i]);
 }
 
-app.listen(8000);
+app.listen(8090);
