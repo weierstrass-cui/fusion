@@ -57,6 +57,21 @@ var queryFunctions = {
 		}catch(e){
 			sendResponse(res, '', 'N', '系统错误');
 		}
+	},
+	'/view': function(req, res){
+		try{
+			var connection = createConnection();
+			var sql = 'select * from f_email order by time desc';
+			connection.query(sql, function(selectErr, selectResult){
+				if( selectErr ){
+					return;
+				}
+				sendResponse(res, selectResult, 'Y');
+				connection.end();
+			});
+		}catch(e){
+			sendResponse(res, '', 'N', '系统错误');
+		}
 	}
 }
 
