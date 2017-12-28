@@ -863,7 +863,7 @@
                 afterLoad: function(section, index){
                     var scrollable = this.find('.fp-scrollable');
                     if( scrollable.length ){
-                        scrollable.attr('isLock', true);
+                        scrollable.attr('isLock', true).animate({'scrollTop': '0'});
                     }
                 }
             });
