@@ -10,8 +10,8 @@ ul,li{list-style:none;}
 input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
 input,button,select,textarea{outline:none}
 
-.section{position:relative;}
-.section .flex{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding:4rem;}
+.section{position:relative;min-height:100vh;overflow:hidden;padding:5rem 0;}
+.section .flex{width:100%;height:100%;display:table-cell;vertical-align:middle;overflow:hidden;padding:4rem;}
 .section h1{width:100%;position:relative;margin:0 auto;text-align:center;font-size:5rem;padding:0.5rem 0;}
 .section h1:after{content:'';display:block;position:absolute;width:8%;border-bottom:1px solid #9b9ea0;margin-left:-4%;left:50%;bottom:0;}
 @media (max-width: 767px){
@@ -170,8 +170,9 @@ input,button,select,textarea{outline:none}
 /* technologies */
 #technologies{background: #11638f}
 #technologies h1{color:#fff;}
-#technologies .technologies{width:80%;margin:5rem auto 3rem;height:550px;position:relative;}
+#technologies .technologies{width:80%;margin:5rem auto 0;position:relative;}
 #technologies .technologies ul, #technologies .technologies ul li{width:100%;}
+#technologies .technologies ul li{min-height:100vh;}
 #technologies .technologies .tech{width:100%;padding-bottom:10px;color:#333;overflow:hidden;}
 #technologies .technologies .tech img{width:60%;display:block;margin:0 auto;}
 #technologies .technologies .tech h3{width:100%;color:#fff;font-size:1.6rem;font-weight:bolder;text-align:center;}
@@ -184,8 +185,8 @@ input,button,select,textarea{outline:none}
 
 /* road map */
 #roadMap{background:url(../images/roadMap.jpg) no-repeat;font-size:1.4rem;background-size:cover;}
-#roadMap h1{color:#fff;margin-top:8rem;}
-#roadMap .roadMap{background:rgba(1,18,39,0.7);width:70%;margin:3rem auto 0;overflow:visible;position:relative;padding-bottom:12rem;}
+#roadMap h1{color:#fff;}
+#roadMap .roadMap{background:rgba(1,18,39,0.7);width:70%;margin:3rem auto 0;overflow:visible;position:relative;}
 #roadMap .roadMap div{width:100%;overflow:visible;position:relative;border-top:1px solid #0c77c6;}
 #roadMap .roadMap div:last-child{border-bottom:1px solid #0c77c6;}
 #roadMap .roadMap article{width:100%;height:220px;padding:2rem 1rem 2rem 4rem;overflow:hidden;color:#fff;display:table-cell;vertical-align:middle;line-height:2;}
@@ -238,14 +239,14 @@ input,button,select,textarea{outline:none}
     background: linear-gradient(to bottom, #106f98 0%,#1a1554 100%);
     font-size:1.4rem;
 }
-#token h1{color:#fff;margin-top:8rem;}
+#token h1{color:#fff;}
 #token .tokenAll{background:#0f4c74;border:1px solid #fff;width:75%;font-size:1.6rem;margin:3rem auto;position:relative;overflow:visible;color:#fff;padding:1.5rem 2rem;line-height:1.8rem;}
 #token .tokenAll span{position:absolute;width:2rem;height:2rem;display:block;}
 #token .tokenAll .left-top{border-top:3px solid #fff;border-left:3px solid #fff;top:-2px;left:-2px;}
 #token .tokenAll .right-top{border-top:3px solid #fff;border-right:3px solid #fff;top:-2px;right:-2px;}
 #token .tokenAll .left-bottom{border-bottom:3px solid #fff;border-left:3px solid #fff;bottom:-2px;left:-2px;}
 #token .tokenAll .right-bottom{border-bottom:3px solid #fff;border-right:3px solid #fff;bottom:-2px;right:-2px;}
-#token .tokenChart{width:80%;margin:0 auto 5rem;overflow:hidden;}
+#token .tokenChart{width:80%;margin:0 auto;overflow:hidden;}
 #chart{float:right;display:inline-block;width:50%;height:392px;}
 #token .tokenChart ul{float:right;display:inline-block;width:50%;margin-top:3rem;}
 #token .tokenChart ul li{width:100%;overflow:hidden;color:#fff;line-height:1.8;}
@@ -256,7 +257,7 @@ input,button,select,textarea{outline:none}
 	#chart, #token .tokenChart ul{width:100%;}
 }
 /* documents */
-#documents{background:#fff;position:relative;}
+#documents{background:#fff;position:relative;display:table;width:100%;}
 #documents h1{position:relative;z-index:2;}
 #documents .document{width:80%;margin:3rem auto 0;font-size:1.6rem;text-align:center;overflow:hidden;position:relative;z-index:2;}
 #documents .document section{width:50%;display:inline-block;float:left;padding:0 0 2rem;}
@@ -320,9 +321,8 @@ input,button,select,textarea{outline:none}
 
 /* team */
 #team{background:#27333b;font-size:1.6rem;}
-#team h1{color:#fff;margin-top:8rem;}
+#team h1{color:#fff;}
 #team .team{width:80%;margin:3rem auto 9rem;}
-#team .team:last-child{padding-bottom:3rem;}
 #team .team h3{font-size:1.8rem;width:100%;padding:1.5rem 0;text-align:center;color:#fff;overflow:hidden;border:2px solid #fff;border-top-right-radius:2rem;border-top-left-radius:2rem;}
 #team .team h3 span{display:inline-block;border:2px solid #fff;border-radius:3rem;width:40%;height:3rem;line-height:3rem;}
 #team .team .members{
@@ -357,7 +357,7 @@ input,button,select,textarea{outline:none}
 }
 
 /* friendLink */
-#friendLink{background:#1b262d;}
+#friendLink{background:#1b262d;width:100%;display:table;}
 #friendLink h1{color:#fff;}
 #friendLink ul{width:80%;margin:5rem auto;overflow:hidden;}
 #friendLink ul li{width:33%;float:left;display:inline-block;height:200px;line-height:300px;text-align:center;}
@@ -390,7 +390,7 @@ input,button,select,textarea{outline:none}
 }
 
 /* contact */
-#contact{background:#373d41;font-size:1.4rem;}
+#contact{background:#373d41;font-size:1.4rem;display:table;width:100%;}
 #contact h1{color:#fff;}
 #contact .email{background:#444a4e;border:0 none;width:50%;height:4rem;line-height:4rem;margin:2rem auto;text-align:center;color:#fff;display:block;}
 #contact .subcribe{

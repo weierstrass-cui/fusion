@@ -311,7 +311,7 @@
                                 <h5>Dejun QIAN</h5>
                                 <span>Visionary & Principle</span>
                                 <dl>
-                                    <dt>·</dt> <dd>CEO, Founder of BitSE, Incubated QTUM, VeChain</dd>
+                                    <dt>·</dt> <dd>CEO, Founder of BitSE, Created QTUM, VeChain.</dd>
                                     <dt>·</dt> <dd>IBM Regional Branch General Manager/Client Unit Executive.</dd>
                                     <dt>·</dt> <dd>Bachelor of Computer Science, Fudan University.</dd>
                                 </dl>
@@ -739,15 +739,15 @@
                 <span>Subscribe to our news and follow us.</span>
                 <div class="follows">
                     <a class="github" target="_blank" title="Github" href="javascript://"></a>
-                    <a class="linkedin" target="_blank" title="Linked In" href="javascript://"></a>
+                    <a class="linkedin" target="_blank" title="Linked In" href="https://www.linkedin.com/company/27156486/"></a>
                     <a class="bitcoin" target="_blank" title="Bitcoin" href="javascript://"></a>
-                    <a class="facebook" target="_blank" title="Facebook" href="javascript://"></a>
+                    <a class="facebook" target="_blank" title="Facebook" href="https://www.facebook.com/Fusion-Foundation-137400543573832"></a>
                     <a class="reddit" target="_blank" title="Reddit" href="javascript://"></a>
-                    <a class="medium" target="_blank" title="Medium" href="javascript://"></a>
-                    <a class="twitter" target="_blank" title="Twitter" href="javascript://"></a>
+                    <a class="medium" target="_blank" title="Medium" href="https://medium.com/@fusionproject"></a>
+                    <a class="twitter" target="_blank" title="Twitter" href="https://twitter.com/FusionCryptoFin"></a>
                     <a class="youtube" target="_blank" title="Youtube" href="javascript://"></a>
                     <a class="steemit" target="_blank" title="Steemit" href="javascript://"></a>
-                    <a class="telegram" target="_blank" title="Telegram" href="javascript://"></a>
+                    <a class="telegram" target="_blank" title="Telegram" href="https://t.me/joinchat/FLcrexI3HRJ0lPpRy8kQ-w"></a>
                 </div>
             </div>
             <!-- footer -->
@@ -850,7 +850,8 @@
             $(window).resize(function(){
                 drawChart();
             });
-            $('#fullPage').fullpage({
+
+            /*$('#fullPage').fullpage({
                 paddingTop: '64px',
                 scrollOverflow: true,
                 afterRender: function(){
@@ -866,16 +867,34 @@
                         scrollable.attr('isLock', true).animate({'scrollTop': '0'});
                     }
                 }
+            });*/
+
+            var navHeight = $('#nav').height();
+            $('body').scroll(function(){
+                $('#nav').toggleClass('dark', $(this).scrollTop() >= 100);
+                var c = null;
+                $('#fullPage').find('section').each(function(){
+                    if( $(this).offset().top <= navHeight ){
+                        c = $(this).attr('id');
+                    }else{
+                        return false;
+                    }
+                });
+                $('nav').find('a[href$="' + c + '"]').addClass('current').siblings().removeClass('current');
             });
 
             $('#nav').find('a').bind('click', function(){
                 if( $(this).is('.phoneMenu') ){
                     $('nav').slideToggle();
                 }else{
-                    if( $(this).is('logo') ){
-                        $.fn.fullpage.moveTo(1);
+                    if( $(this).is('.logo') ){
+                        $('html, body').animate({'scrollTop': '0'});
+                        // $.fn.fullpage.moveTo(1);
                     }else{
-                        $.fn.fullpage.moveTo($(this).index() + 1);
+                        var path = $(this).attr('href').replace(/^#/, ''),
+                            sct = $('body').scrollTop() + $('#' + path).offset().top - navHeight;
+                        $('html, body').animate({'scrollTop': sct + 'px'});
+                        // $.fn.fullpage.moveTo($(this).index() + 1);
                     }
                     if( $('.phoneMenu').is(':visible') ){
                         $('nav').hide();
