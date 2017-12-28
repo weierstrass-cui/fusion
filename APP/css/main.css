@@ -258,7 +258,7 @@ input,button,select,textarea{outline:none}
 	#chart, #token .tokenChart ul{width:100%;}
 }
 /* documents */
-#documents{background:#373d41;position:relative;display:table;width:100%;}
+#documents{background:#135282;position:relative;display:table;width:100%;}
 #documents h1{position:relative;z-index:2;color:#fff;}
 #documents .document{width:80%;margin:3rem auto 0;font-size:1.6rem;text-align:center;overflow:hidden;position:relative;z-index:2;}
 #documents .document section{width:50%;display:inline-block;float:left;padding:0 0 2rem;}
@@ -266,16 +266,16 @@ input,button,select,textarea{outline:none}
 #documents .document span.executive{background-position:-212px 0;}
 #documents .document span.whitepaper{background-position:0 0;}
 #documents .document a{
-	background: -moz-linear-gradient(left, #106f98 0%, #1a1554 100%);
+	/*background: -moz-linear-gradient(left, #106f98 0%, #1a1554 100%);
     background: -webkit-gradient(linear, left, right, color-stop(0%,#106f98), color-stop(100%,#1a1554));
     background: -webkit-linear-gradient(left, #106f98 0%,#1a1554 100%);
     background: -o-linear-gradient(left, #106f98 0%,#1a1554 100%);
     background: -ms-linear-gradient(left, #106f98 0%,#1a1554 100%);
-    background: linear-gradient(to right, #106f98 0%,#1a1554 100%);
+    background: linear-gradient(to right, #106f98 0%,#1a1554 100%);*/
 	width:230px;height:55px;display:block;border-radius:3rem;margin:0 auto;overflow:hidden;box-shadow: 0 10px 20px rgba(26, 21, 84, 0.2);
 }
-#documents .document a span{width:228px;height:53px;line-height:53px;display:block;margin:1px auto;color:#fff;border-radius:3rem;cursor:pointer;}
-#documents .document a:hover span{background:#fff;color:#444a4e;}
+#documents .document a span{background:#fff;width:228px;height:53px;line-height:53px;display:block;margin:1px auto;color:#444a4e;border-radius:3rem;cursor:pointer;}
+#documents .document a:hover span{background:#e1e1e1;color:#444a4e;}
 /*#documents .balls{position:absolute;width:100%;height:100%;overflow:hidden;top:0;left:0;}
 #documents .balls div{
 	background: -moz-linear-gradient(left, #27333b 0%, #1b1e20 100%);
@@ -370,10 +370,10 @@ input,button,select,textarea{outline:none}
 
 
 /* FAQ */
-#FAQ{font-size:1.6rem;position:relative;background:#2f2f33;}
+#FAQ{font-size:1.6rem;position:relative;background:#27333b;}
 #FAQ h1{color:#fff;}
-#FAQ:before{content:'';background:url(../images/faqUp.jpg) no-repeat left top;background-size:100%;position:absolute;width:50%;height:50%;top:0;left:0;}
-#FAQ:after{content:'';background:url(../images/faqDown.jpg) no-repeat right bottom;background-size:100%;position:absolute;width:50%;height:50%;bottom:0;right:0;}
+/*#FAQ:before{content:'';background:url(../images/faqUp.jpg) no-repeat left top;background-size:100%;position:absolute;width:50%;height:50%;top:0;left:0;}
+#FAQ:after{content:'';background:url(../images/faqDown.jpg) no-repeat right bottom;background-size:100%;position:absolute;width:50%;height:50%;bottom:0;right:0;}*/
 #FAQ h1{position:relative;z-index:2;margin-top:8rem;}
 #FAQ ul{width:80%;margin:3rem auto 8rem;position:relative;z-index:2;}
 #FAQ ul li{width:100%;color:#fff;border-bottom:1px solid rgba(255,255,255,0.5);padding:1rem;}
